@@ -1,0 +1,133 @@
+body, html {
+  font-family: 'monospace';
+  background-color: #1a1b26;
+  color: #a9b1d6;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.terminal-header {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #7aa2f7;
+}
+
+.terminal-header-accent {
+  color: #f7768e;
+}
+
+.terminal-subheader {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #bb9af7;
+}
+
+.terminal-subheader-accent {
+  color: #7dcfff;
+}
+
+.terminal-disclaimer {
+  font-size: 0.8rem;
+  color: #565f89;
+  margin-bottom: 1rem;
+}
+
+.terminal-form {
+  margin-bottom: 1rem;
+}
+
+.terminal-textarea {
+  width: 100%;
+  background-color: #24283b;
+  color: #c0caf5;
+  border: 1px solid #414868;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s ease;
+}
+
+.terminal-textarea:focus {
+  outline: none;
+  border-color: #7aa2f7;
+}
+
+.terminal-submit {
+  background-color: #7aa2f7;
+  color: #1a1b26;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.terminal-submit:hover {
+  background-color: #7dcfff;
+}
+
+.terminal-submit:disabled {
+  background-color: #565f89;
+  cursor: not-allowed;
+}
+
+/* Result styles */
+.terminal-result {
+  background-color: #24283b;
+  border: 1px solid #414868;
+  border-radius: 4px;
+  padding: 1rem;
+  min-height: 50px;
+}
+
+.terminal-loading {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgb(53, 77, 86);
+  border-radius: 100%;
+  border-top-color: #7aa2f7;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-credits {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #565f89;
+}
+
+.terminal-heart {
+  color: #f7768e;
+}
+
+.terminal-link {
+  color: #7dcfff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terminal-link:hover {
+  color: #bb9af7;
+  text-decoration: underline;
+}
